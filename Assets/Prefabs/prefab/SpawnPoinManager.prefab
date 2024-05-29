@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5053962775406895306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5053962775406895304}
+  - component: {fileID: 5053962775406895307}
+  m_Layer: 0
+  m_Name: SpawnPoinManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5053962775406895304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5053962775406895306}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 25, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5053962775406895307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5053962775406895306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa080a71f0f2a146b6816579f6c8a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 0}
+  _parent: {fileID: 0}
+  Obstacle:
+  - {fileID: 6485125232130825303, guid: dca1cf44a4002f34494e33ea0cd24916, type: 3}
+  - {fileID: 828573569360909890, guid: 7e9766cb9c15e40bd80f865730b769ea, type: 3}
+  - {fileID: 5017881564293984940, guid: 36e7f16440bf14b6fa2c2ecbd0e82749, type: 3}
+  - {fileID: 7905210154539155773, guid: 236bdf459f97047379f25d90f47801d3, type: 3}
+  - {fileID: 3398915022667923130, guid: 78affce63bf64461f95012f4cb9162d5, type: 3}
+  - {fileID: 6376657273702180774, guid: 660b240cee2314f5193034cddeba9872, type: 3}
+  Enemy: {fileID: 2241754684037453090, guid: c47be981b28dd47c19a94f85ed0ac160, type: 3}
+  maxX: 30
+  minX: 10
+  maxY: 3
+  minY: -3
+  timeBetweenSpawn: 1.5
