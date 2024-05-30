@@ -53,25 +53,11 @@ namespace Runner.SpawnObstacles
             var rndmNum = Random.Range(0, 3);
             if (rndmNum <= 1)
             {
-                foreach (var e in _obstacles)
-                {
-                    if (!e.activeInHierarchy)
-                    {
-                        SpawnFromPool(_obstacles, new Vector3(randomX, randomY, 0));
-                        return;
-                    }
-                }
+                SpawnFromPool(_obstacles, new Vector3(randomX, randomY, 0));
             }
             else
             {
-                foreach (var e in _enemies)
-                {
-                    if (!e.activeInHierarchy)
-                    {
-                        SpawnFromPool(_enemies, new Vector3(randomX, 0, 0));
-                        return;
-                    }
-                }
+                SpawnFromPool(_enemies, new Vector3(randomX, 0, 0));
             }
         }
 
